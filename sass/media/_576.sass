@@ -1,0 +1,103 @@
+@media (max-width: 576px)
+  .container
+    width: 90%
+  .logo
+    &__link
+      color: $blue
+  .header
+    background: none
+    &__navbar
+      display: none
+      &_mobile
+        height: 70px
+        display: flex
+        position: fixed
+        right: 0
+        top: 0
+        list-style: none
+        padding: 0
+        background-color: $blue
+        margin: 0
+    &__block
+      left: 0
+      z-index: -1
+      background-size: 150%
+      
+  .hero
+    &__description
+      width: 100%
+    &__titel
+      color: $blue
+      margin-right: 20%
+      margin-bottom: 44px
+      font-size: 24px
+      line-height: 29px
+    &__text
+      color: $blue
+      text-align: right
+      max-width: 100%
+      margin-left: 20%
+      margin-bottom: 37px
+      font-size: 13px
+      line-height: 16px
+    &__link
+      max-width: 100%
+      background-color: $blue
+      color: $light
+    &-photo
+      display: none
+
+  .menu-button
+    background-color: $blue
+    height: 70px
+    width: 75px
+    position: fixed
+    right: 0
+    top: 0
+    &__line
+      display: block
+      position: absolute
+      right: 24px
+      top: 33px
+      width: 30px
+      height: 3px
+      background-color: $light
+      border: none
+      cursor: pointer
+      &:before 
+        content: ''
+        display: block
+        position: absolute
+        top: 0
+        right: 0
+        width: 30px
+        height: 3px
+        background-color: $light
+        transition: transform 0.2s
+        margin-top: -7px
+      &:after 
+        content: ''
+        display: block
+        position: absolute
+        top: 0
+        right: 0
+        width: 30px
+        height: 3px
+        background-color: $light
+        transition: transform 0.2s
+        margin-top: 7px
+      &--active 
+        height: 0
+        &:before 
+          transform: rotate(45deg)
+          margin-top: 0
+        &:after 
+          transform: rotate(-45deg)
+          margin-top: 0
+      // &__line
+      //   display: inline-block
+      //   height: 2px
+      //   width: 100%
+      //   background-color: $blue
+      //   border-radius: 5px
+        

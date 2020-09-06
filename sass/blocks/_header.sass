@@ -2,4 +2,56 @@
   &__link
     font-weight: 300
     font-size: 45px
-    line-height: 55px
+    line-height: 45px
+    color: $light
+    text-transform: uppercase
+
+.header
+  position: relative
+  background-color: $dark-blue
+  padding-top: 35px
+  background-image: url('../img/hero-left.svg')
+  background-position: left
+  background-size: 30%
+  background-repeat: no-repeat
+  &__navbar
+    display: flex
+    position: relative
+    z-index: 10
+  &-menu
+    display: flex
+    position: fixed
+    right: 0
+    top: 0
+    left: 40%
+    list-style: none
+    padding: 0
+    background-color: $blue
+    padding: 48px 0 21px 82px
+    margin: 0
+    &__item
+      padding-right: 20px
+      &_active
+        font-weight: 600
+        color: $text-color
+    &__link
+      font-size: 24px
+      line-height: 29px
+      color: $light
+      cursor: pointer
+  &__block
+    position: absolute
+    right: 0
+    top: 0
+    bottom: 0
+    left: 65%
+    background-color: $white
+    background-image: url('../img/hero-right.svg')
+    background-repeat: no-repeat
+    background-size: 100%
+    background-position: right top
+
+
+
+
+    
