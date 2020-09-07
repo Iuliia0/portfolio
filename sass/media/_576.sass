@@ -6,17 +6,38 @@
       color: $blue
   .header
     background: none
-    &__navbar
+    &-menu
       display: none
+      position: fixed
+      left: 0
+      right: 0
+      background-color: $blue
+      top: 70px
+      border: 1
+      width: 95%
+      margin: auto
+      &--visible
+        max-height: 100%
+        overflow: auto
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        padding-left: 0
+        padding-bottom: 0
+      &__link
+        font-size: 14px   
+        line-height: 17px
+      &__item
+        margin-bottom: 20px
       &_mobile
         height: 70px
         display: flex
         position: fixed
         right: 0
-        top: 0
         list-style: none
         padding: 0
-        background-color: $blue
+        background-color: transparent
         margin: 0
     &__block
       left: 0
@@ -48,12 +69,17 @@
       display: none
 
   .menu-button
+    display: block
     background-color: $blue
     height: 70px
     width: 75px
     position: fixed
     right: 0
     top: 0
+    &_active
+      width: 100%
+      left: 0
+      height: 354px
     &__line
       display: block
       position: absolute
@@ -64,6 +90,7 @@
       background-color: $light
       border: none
       cursor: pointer
+      margin-bottom: 5px
       &:before 
         content: ''
         display: block
@@ -86,18 +113,40 @@
         background-color: $light
         transition: transform 0.2s
         margin-top: 7px
-      &--active 
-        height: 0
+      &_active 
+        height: 30px
+        background-color: transparent
         &:before 
           transform: rotate(45deg)
           margin-top: 0
         &:after 
           transform: rotate(-45deg)
           margin-top: 0
-      // &__line
-      //   display: inline-block
-      //   height: 2px
-      //   width: 100%
-      //   background-color: $blue
-      //   border-radius: 5px
+    &__logo
+      display: none
+      &_active
+        display: flex
+        align-items: center
+        justify-content: center
+        padding-top: 44px
+    &__logo-link
+      color: $light
+    &__wrapper
+      display: flex
+      align-items: center
+      justify-content: space-between
+      position: absolute
+      bottom: 30px
+      right: 50%
+      left: 50%
+      transform: translateX(-50%)
+      width: 96px
+    &__icon
+      display: none
+      width: 16px
+      height: 16px
+      &_active
+        display: flex
+        cursor: pointer
+  
         
