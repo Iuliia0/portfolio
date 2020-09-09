@@ -1,0 +1,53 @@
+.study
+  position: relative
+  // overflow: hidden
+  &__wrapper
+    padding-top: 80px
+    padding-bottom: 80px
+    transform: rotate(-4deg)
+    margin-top: -70px
+    &:before
+      content: ''
+      position: absolute
+      width: 130%
+      height: 100%
+      top: 0
+      left: -10%
+      z-index: -2
+      background: url('../img/study-bg.png') top center  no-repeat
+      background-size: 100%
+    &:after
+      content: ''
+      position: absolute
+      width: 130%
+      height: 100%
+      top: 0
+      left: -10%
+      z-index: -1
+      background-color: rgba(255, 255, 255, 0.6) 
+      background-size: 100%
+  &__container
+    padding-top: 80px
+    padding-bottom: 80px
+    transform: rotate(4deg)
+  &__titel
+    font-size: 36px
+    line-height: 44px
+    color: $text-color
+    margin-bottom: 65px
+    text-align: center
+  &-blocks
+    &__container
+      color: $text-color
+      margin-bottom: 69px
+      &:last-child
+        margin-bottom: 0
+    &__titel
+      font-size: 24px
+      line-height: 29px
+      margin-bottom: 20px
+    &__text
+      font-size: 24px
+      line-height: 29px
+    &__link
+      color: $link-color
