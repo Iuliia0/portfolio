@@ -43,7 +43,6 @@
       left: 0
       z-index: -1
       background-size: 150%
-      
   .hero
     &__description
       width: 100%
@@ -67,7 +66,6 @@
       color: $light
     &-photo
       display: none
-
   .menu-button
     display: block
     background-color: $blue
@@ -77,9 +75,10 @@
     right: 0
     top: 0
     &_active
+      overflow: scroll
       width: 100%
       left: 0
-      height: 354px
+      height: 100%
     &__line
       display: block
       position: absolute
@@ -148,5 +147,31 @@
       &_active
         display: flex
         cursor: pointer
-  
+  .useful
+    padding-top: 30px
+    padding-bottom: 30px
+    &__line
+      width: 20%
+      &_2
+        margin-bottom: 30px
+    &__titel
+      font-size: 24px
+      line-height: 29px
+      &__contaener
+        margin-bottom: 20px
+    &__text
+      font-size: 14px
+      line-height: 17px
+      margin-bottom: 30px
+    &-blocks
+      &__item
+        margin-bottom: 20px
+      &__titel
+        font-size: 18px
+        line-height: 22px
+        margin-bottom: 10px
+      &__text
+        font-size: 14px
+        line-height: 17px
+    
         
