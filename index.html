@@ -1,474 +1,562 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>Юлия Емельянова</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/style.min.css" />
-  <title>Юлия Емельянова</title>
-</head>
+  <body>
+    <div class="body__wrapper">
+      <header class="header">
+        <div class="header__navbar">
+          <ul class="header-menu">
+            <li
+              data-target="#useful"
+              class="header-menu__item header-menu__item_active"
+            >
+              <a href="#" class="link header-menu__link">Чем полезна</a>
+            </li>
+            <li data-target="#study" class="header-menu__item">
+              <a href="#" class="link header-menu__link">Где училась</a>
+            </li>
+            <li data-target="#work" class="header-menu__item">
+              <a href="#" class="link header-menu__link">Где работала</a>
+            </li>
+            <li data-target="#project" class="header-menu__item">
+              <a href="#" class="link header-menu__link">Портфолио</a>
+            </li>
+            <li data-target="#contacts" class="header-menu__item">
+              <a href="#" class="link header-menu__link">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.header__navbar -->
+        <!-- менюшка для мобилки -->
+        <div class="menu-button">
+          <div class="menu-button__line"></div>
+          <!-- /.menu-button__line" -->
+          <div class="logo menu-button__logo">
+            <a href=" index.html" class="logo__link menu-button__logo-link"
+              >Emelyanova</a
+            >
+          </div>
+          <!-- /.logo -->
+          <div class="menu-button__wrapper">
+            <div class="menu-button__icon">
+              <a
+                href="mailto:julia03951@gmail.com"
+                class="menu-button__icon-link"
+                ><img
+                  src="img/google.svg"
+                  alt="Icon: Google Mail"
+                  class="menu-button__google"
+              /></a>
+            </div>
+            <!-- /.menu-button__icon -->
+            <div class="menu-button__icon">
+              <a href="tel:89992154515" class="menu-button__icon-link"
+                ><img
+                  src="img/contacts.svg"
+                  alt="Icon: Number"
+                  class="menu-button__number"
+              /></a>
+            </div>
+            <!-- /.menu-button__icon -->
+            <div class="menu-button__icon">
+              <a href="https://t.me/jul55" class="menu-button__icon-link"
+                ><img
+                  src="img/telegram.svg"
+                  alt="Icon: Telegram"
+                  class="menu-button__telegram"
+              /></a>
+            </div>
+            <!-- /.menu-button__icon -->
+          </div>
+          <!-- /.menu-button__wrapper -->
+        </div>
+        <!-- /.menu-button -->
 
-<body>
-  <div class="body__wrapper">
-    <header class="header">
-      <div class="header__navbar">
-        <ul class="header-menu">
-          <li data-target="#useful" class="header-menu__item header-menu__item_active">
-            <a href="#" class="link header-menu__link">Чем полезна</a>
-          </li>
-          <li data-target="#study" class="header-menu__item">
-            <a href="#" class="link header-menu__link">Где училась</a>
-          </li>
-          <li data-target="#work" class="header-menu__item">
-            <a href="#" class="link header-menu__link">Где работала</a>
-          </li>
-          <li data-target="#project" class="header-menu__item">
-            <a href="#" class="link header-menu__link">Портфолио</a>
-          </li>
-          <li data-target="#contacts" class="header-menu__item">
-            <a href="#" class="link header-menu__link">Контакты</a>
-          </li>
-        </ul>
-      </div>
-      <!-- /.header__navbar -->
-      <!-- менюшка для мобилки -->
-      <div class="menu-button">
-        <div class="menu-button__line"></div>
-        <!-- /.menu-button__line" -->
-        <div class="logo menu-button__logo">
-          <a href=" index.html" class="logo__link menu-button__logo-link">Emelyanova</a>
-        </div>
-        <!-- /.logo -->
-        <div class="menu-button__wrapper">
-          <div class="menu-button__icon">
-            <a href="mailto:julia03951@gmail.com" class="menu-button__icon-link"><img src="img/google.svg"
-                alt="Icon: Google Mail" class="menu-button__google" /></a>
-          </div>
-          <!-- /.menu-button__icon -->
-          <div class="menu-button__icon">
-            <a href="tel:89992154515" class="menu-button__icon-link"><img src="img/contacts.svg" alt="Icon: Number"
-                class="menu-button__number" /></a>
-          </div>
-          <!-- /.menu-button__icon -->
-          <div class="menu-button__icon">
-            <a href="tg://resolve?domain=@jul55" class="menu-button__icon-link"></a><img src="img/telegram.svg"
-              alt="Icon: Telegram" class="menu-button__telegram" />
-          </div>
-          <!-- /.menu-button__icon -->
-        </div>
-        <!-- /.menu-button__wrapper -->
-      </div>
-      <!-- /.menu-button -->
-
-      <div class="container">
-        <div class="logo">
-          <a href="index.html" class="logo__link">Emelyanova</a>
-        </div>
-        <div class="hero">
-          <div class="hero__container">
-            <div class="hero__description">
-              <h1 class="hero__titel">
-                Привет, <br class="hero__transfer" />
-                я Юлия Емельянова - верстальщик сайтов
-              </h1>
-              <p class="hero__text">
-                Страница создана для поиска потенциальных работодателей: здесь
-                можно найти проекты из портфолио, описание моих навыков,
-                контактные данные.
-              </p>
-              <a class="link hero__link" href="#project">Смотреть портфолио</a>
-            </div>
-            <!-- /.hero__description -->
-            <div class="hero-photo hero-photo__elipse">
-              <div class="hero-photo__wrapper">
-                <img src="img/hero__item.png" alt="Photo: Julia Emelyanova" class="hero-photo__item" />
-              </div>
-              <!-- /.hero-photo__wrapper -->
-            </div>
-            <!-- /.hero-photo -->
-          </div>
-          <!-- /.hero__container -->
-        </div>
-        <!-- /.hero -->
-      </div>
-      <!-- /.container -->
-      <div class="header__block"></div>
-      <!-- /.header__block -->
-    </header>
-    <!-- /.header -->
-    <section class="useful tabs tabs__active" id="useful">
-      <div class="container">
-        <div class="useful__titel-container">
-          <span class="useful__line"></span>
-          <h2 class="useful__titel">Чем полезна</h2>
-          <span class="useful__line"></span>
-        </div>
-        <!-- /.useful__wrapper -->
-        <p class="useful__text">
-          Умею верстать сайты по дизайн макетам. Работаю с макетами PSD, Adobe
-          XD, Figma. Также использую Avocode. Знаю, как правильно
-          экспортировать графику, доставать шрифты и узнавать точные отступы.
-          Например: я не буду вырезать иконку в PNG, если есть возможность
-          достать SVG.
-          <br /><br />
-          Я не создаю макеты сайтов, а работаю с тем, что предоставляет
-          дизайнер. Но могу сделать дизайн мобильной версии сайта на основе
-          макета с компьютерной версии.
-        </p>
-        <span class="useful__line_2"></span>
-        <div class="useful-blocks">
-          <div class="useful-blocks__wrapper">
-            <div class="useful-blocks__item useful-blocks__item_1">
-              <h4 class="useful-blocks__titel">Пиксель в пиксель</h4>
-              <p class="useful-blocks__text">
-                Верстаю пиксель в пиксель, если это потребуется. В процессе
-                работы накладываю дизайн-макет на вёрстку, чтобы убедиться,
-                что расхождений нет.
-              </p>
-            </div>
-            <!-- /.useful-blocks__item_1 -->
-            <div class="useful-blocks__item useful-blocks__item_2">
-              <h4 class="useful-blocks__titel">Семантическая вёрстка</h4>
-              <p class="useful-blocks__text">
-                Делаю семантически правильную разметку, без проблем прохожу
-                проверку кода на валидность без ошибок. Понимаю, как
-                расставить теги и заголовки на странице. После меня
-                SEO-специалисту не нужно будет переделывать работу.
-              </p>
-            </div>
-            <!-- /.useful-blocks__item_2 -->
-          </div>
-          <!-- /.useful-blocks__wrapper -->
-          <div class="useful-blocks__wrapper">
-            <div class="useful-blocks__item useful-blocks__item_3">
-              <h4 class="useful-blocks__titel">Адаптивная вёрстка</h4>
-              <p class="useful-blocks__text">
-                Верстаю адаптивно, проверяю через адаптив браузера, на
-                мобильных устройствах и телевизоре. Есть аккаунт на
-                browserstack, поэтому если нужно быстро узнать, как сайт ведёт
-                себя на пятом айфоне - посмотрю за 5 минут, сделаю скриншоты и
-                исправлю недочёты.
-              </p>
-            </div>
-            <!-- /.useful-blocks__item_3 -->
-            <div class="useful-blocks__item useful-blocks__item_4">
-              <h4 class="useful-blocks__titel">Стили на препроцессорах</h4>
-              <p class="useful-blocks__text">
-                Стили пишу с помощью препроцессора SASS/SCSS, поэтому
-                получается писать быстро, легко находить нужный участок кода и
-                делать гибкие настройки. Например: если стиль повторяется два
-                раза - пишу миксин и дальше использую его вместо копи пасты.
-              </p>
-            </div>
-            <!-- /.useful-blocks__item_4" -->
-          </div>
-          <!-- /.useful-blocks__wrapper -->
-
-          <div class="useful-blocks__item useful-blocks__item_5">
-            <h4 class="useful-blocks__titel">Хостинг, домен, Git и т.д.</h4>
-            <p class="useful-blocks__text">
-              Умею настраивать хостинг, привязывать домен, регистрировать
-              SSL-сертификат. Сам проект обычно храню в репозитории на Github.
-              В командной разработке ещё не участвовала, поэтому гит знаю на
-              уровне: сделать репозиторий, клонировать, его, внести изменения,
-              сохранить коммиты и отправить пуш.
-            </p>
-          </div>
-          <!-- /.useful-blocks -->
-        </div>
-        <!-- /.useful-blocks__wrapper -->
-      </div>
-      <!-- /.container -->
-    </section>
-    <!-- /.useful -->
-    <section class="study tabs study__wrapper" id="study">
-      <div class="study__container">
         <div class="container">
-          <h2 class="study__titel">Где училась</h2>
-          <div class="study-blocks study-blocks__container">
-            <h3 class="study-blocks__titel">Самостоятельно</h3>
-            <p class="study-blocks__text">
-              Начала с просмотра видео уроков на YouTube. Смотрела, как автор
-              пишет код, потом его повторяла. Затем начала писать код сама,
-              обращалась за помощью в чаты, где были более опытные
-              разработчики. Проходила разные курсы в приложениях и интенсивы
-              от других компаний, которые занимаются разработкой.
-            </p>
+          <div class="logo">
+            <a href="index.html" class="logo__link">Emelyanova</a>
           </div>
-          <!-- /.study-blocks__container -->
-          <div class="study-blocks study-blocks__container">
-            <h3 class="study-blocks__titel">Курсы</h3>
-            <p class="study-blocks__text">
-              Прошла 7-ми недельный интенсивный курс по вёрстке от Glo
-              Academy. За время курса освоила семантическую вёрстку, Git,
-              SASS, PHP (отправка писем на почту с помощью PHP Mailer),
-              создание адаптивного дизайна из готового макета для полной
-              версии сайта, БЭМ нейминг, модальные окна, валидация формы,
-              анимацию CSS (keyframe и подключение библиотек), оптимизация
-              скорости сайта с помощью Google Page Speed. Всё это можно
-              увидеть на тестовом проекте. Посмотреть дипломный проект можно
-              здесь.
-              <br />
-              <a class="study-blocks__link" href="#">Посмотреть дипломный проэкт здесь.</a>
-            </p>
-            <!-- <br class="study-blocks__transfer study-block__transfer_1">
-              <br class="study-blocks__transfer study-block__transfer_2"> -->
-            <p class="study-blocks__text">
-              В дальнейшем также планирую проходить курсы по повышению
-              квалификации.
-            </p>
+          <div class="hero">
+            <div class="hero__container">
+              <div class="hero__description">
+                <h1 class="hero__titel">
+                  Привет, <br class="hero__transfer" />
+                  я Юлия Емельянова - верстальщик сайтов
+                </h1>
+                <p class="hero__text">
+                  Страница создана для поиска потенциальных работодателей: здесь
+                  можно найти проекты из портфолио, описание моих навыков,
+                  контактные данные.
+                </p>
+                <a class="link hero__link" href="#project"
+                  >Смотреть портфолио</a
+                >
+              </div>
+              <!-- /.hero__description -->
+              <div class="hero-photo hero-photo__elipse">
+                <div class="hero-photo__wrapper">
+                  <img
+                    src="img/hero__item.png"
+                    alt="Photo: Julia Emelyanova"
+                    class="hero-photo__item"
+                  />
+                </div>
+                <!-- /.hero-photo__wrapper -->
+              </div>
+              <!-- /.hero-photo -->
+            </div>
+            <!-- /.hero__container -->
           </div>
-          <!-- /.study-blocks__container -->
+          <!-- /.hero -->
         </div>
         <!-- /.container -->
-      </div>
-      <!-- /.study__container -->
-    </section>
-    <!-- /.study -->
-    <section class="work tabs work__wrapper" id="work">
-      <div class="container">
-        <h4 class="work__titel">Где работала</h4>
-        <div class="work__container">
-          <div class="work-description">
-            <p class="work-description__text">
-              Вся моя работа раньше не была связана с IT.
-            </p>
-            <h6 class="work-description__titel">3 года в общепите</h6>
-            <p class="work-description__text">
-              Должности: бариста, кассир-продавец/пекарь.
-            </p>
-            <h6 class="work-description__titel">1 год провела в Германии</h6>
-            <p class="work-description__text">
-              Уезжала в Германию по программе Au-pair. Работала, учила язык.
-            </p>
-            <h6 class="work-description__titel">
-              1 год и по настоящий момент
-            </h6>
-            <p class="work-description__text">
-              Работаю техническим специалистом в Триколоре. Могу объяснить
-              сложное простыми словами, вести переписку на языке понятным
-              клиенту, подготовить новых сотрудников для работы в компании,
-              помочь приобрести необходимые навыки для повышения качества
-              работы сотрудников.
-            </p>
-            <h6 class="work-description__titel">
-              Уже из Триколора решила перебраться в разработку
-            </h6>
+        <div class="header__block"></div>
+        <!-- /.header__block -->
+      </header>
+      <!-- /.header -->
+      <section class="useful tabs tabs__active" id="useful">
+        <div class="container">
+          <div class="useful__titel-container">
+            <span class="useful__line"></span>
+            <h2 class="useful__titel">Чем полезна</h2>
+            <span class="useful__line"></span>
           </div>
-          <!-- /.work-description -->
-        </div>
-        <!-- /.work__wrapper -->
-      </div>
-      <!-- /.container -->
-    </section>
-    <!-- /.work -->
-    <section class="project tabs project__wrapper" id="project">
-      <div class="container project__container">
-        <h2 class="project__titel">Мои последние проекты</h2>
-        <div class="project-card">
-          <div class="project-card__container">
-            <h3 class="project-card__titel">
-              Сайт для отеля “GRAND HILTON HOTEL”
-            </h3>
-            <span class="project-card__link-name">Ссылка на проект</span>
-            <a href="https://emelianova-julia.ru/ehya-shop/" target="_blank" class="project-card__link">нажми на меня
-            </a>
-            <div class="project-card__video-block">
-              <iframe class="project-card__video" src="https://www.youtube.com/embed/mRWWcsxmOAk" frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            </div>
-            <!-- /.project-card__video-block -->
-            <div class="project-description">
-              <div class="project-description__blocks">
-                <div class="project-description__card">
-                  <h6 class="project-description__titel">Задача</h6>
-                  <p class="project-description__text">
-                    Сверстать сайт по готовому дизайн-макету. Добавить немного
-                    интерактива.
-                  </p>
-                </div>
-                <!-- /.project-description__block -->
-                <div class="project-description__card">
-                  <h6 class="project-description__titel">Срок</h6>
-                  <p class="project-description__text">6 недель.</p>
-                </div>
-                <!-- /.project-description__block -->
+          <!-- /.useful__wrapper -->
+          <p class="useful__text">
+            Умею верстать сайты по дизайн макетам. Работаю с макетами PSD, Adobe
+            XD, Figma. Также использую Avocode. Знаю, как правильно
+            экспортировать графику, доставать шрифты и узнавать точные отступы.
+            Например: я не буду вырезать иконку в PNG, если есть возможность
+            достать SVG.
+            <br /><br />
+            Я не создаю макеты сайтов, а работаю с тем, что предоставляет
+            дизайнер. Но могу сделать дизайн мобильной версии сайта на основе
+            макета с компьютерной версии.
+          </p>
+          <span class="useful__line_2"></span>
+          <div class="useful-blocks">
+            <div class="useful-blocks__wrapper">
+              <div class="useful-blocks__item useful-blocks__item_1">
+                <h4 class="useful-blocks__titel">Пиксель в пиксель</h4>
+                <p class="useful-blocks__text">
+                  Верстаю пиксель в пиксель, если это потребуется. В процессе
+                  работы накладываю дизайн-макет на вёрстку, чтобы убедиться,
+                  что расхождений нет. При необходимости сразу вношу правки.
+                </p>
               </div>
-              <!-- /.project-description__blocks -->
+              <!-- /.useful-blocks__item_1 -->
+              <div class="useful-blocks__item useful-blocks__item_2">
+                <h4 class="useful-blocks__titel">Семантическая вёрстка</h4>
+                <p class="useful-blocks__text">
+                  Делаю семантически правильную разметку, без проблем прохожу
+                  проверку кода на валидность без ошибок. Понимаю, как
+                  расставить теги и заголовки на странице. После меня
+                  SEO-специалисту не нужно будет переделывать работу.
+                </p>
+              </div>
+              <!-- /.useful-blocks__item_2 -->
+            </div>
+            <!-- /.useful-blocks__wrapper -->
+            <div class="useful-blocks__wrapper">
+              <div class="useful-blocks__item useful-blocks__item_3">
+                <h4 class="useful-blocks__titel">Адаптивная вёрстка</h4>
+                <p class="useful-blocks__text">
+                  Верстаю адаптивно, проверяю через адаптив браузера, на
+                  мобильных устройствах и телевизоре. Есть аккаунт на
+                  browserstack, поэтому если нужно быстро узнать, как сайт ведёт
+                  себя на пятом айфоне - посмотрю за 5 минут, сделаю скриншоты и
+                  исправлю недочёты.
+                </p>
+              </div>
+              <!-- /.useful-blocks__item_3 -->
+              <div class="useful-blocks__item useful-blocks__item_4">
+                <h4 class="useful-blocks__titel">Стили на препроцессорах</h4>
+                <p class="useful-blocks__text">
+                  Стили пишу с помощью препроцессора SASS/SCSS, поэтому
+                  получается писать быстро, легко находить нужный участок кода и
+                  делать гибкие настройки. Например: если стиль повторяется два
+                  раза - пишу миксин и дальше использую его вместо копи пасты.
+                </p>
+              </div>
+              <!-- /.useful-blocks__item_4" -->
+            </div>
+            <!-- /.useful-blocks__wrapper -->
 
-              <h6 class="project-description__titel">Описание проекта</h6>
-              <p class="project-description__text">
-                Обучающий проект с курса, по которому проходило обучение.
-                Добавлена анимация на сайт, создан адаптив, модальные окна,
-                настроена отправка писем на почту и валидация форм.
-                Использовался БЭМ на уровне названия классов, SASS для
-                написания стилей, JS и jQuery для написания простых скриптов.
+            <div class="useful-blocks__item useful-blocks__item_5">
+              <h4 class="useful-blocks__titel">Хостинг, домен, Git и т.д.</h4>
+              <p class="useful-blocks__text">
+                Умею настраивать хостинг, привязывать домен, регистрировать
+                SSL-сертификат. Сам проект обычно храню в репозитории на Github.
+                В командной разработке ещё не участвовала, поэтому гит знаю на
+                уровне: сделать репозиторий, клонировать, его, внести изменения,
+                сохранить коммиты и отправить пуш.
               </p>
             </div>
-            <!-- /.project-card__descrintion -->
+            <!-- /.useful-blocks -->
           </div>
-          <!-- /.project-card__container -->
+          <!-- /.useful-blocks__wrapper -->
         </div>
-        <!-- /.project-card -->
-        <div class="project-card">
-          <div class="project-card__container">
-            <h3 class="project-card__titel">
-              Сайт интернет магазина “Ehua shop”
-            </h3>
-            <span class="project-card__link-name">Ссылка на проект</span>
-            <a href="https://emelianova-julia.ru/tour-plane" target="_blank" class="project-card__link">нажми на
-              меня</a>
-            <div class="project-card__video-block">
-              <iframe class="project-card__video" src="https://www.youtube.com/embed/mRWWcsxmOAk" frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+        <!-- /.container -->
+      </section>
+      <!-- /.useful -->
+      <section class="study tabs study__wrapper" id="study">
+        <div class="study__container">
+          <div class="container">
+            <h2 class="study__titel">Где училась</h2>
+            <div class="study-blocks study-blocks__container">
+              <h3 class="study-blocks__titel">Самостоятельно</h3>
+              <p class="study-blocks__text">
+                Начала с просмотра видео уроков на YouTube. Смотрела, как автор
+                пишет код, потом его повторяла. Затем начала писать код сама,
+                обращалась за помощью в чаты, где были более опытные
+                разработчики. Проходила разные курсы в приложениях и интенсивы
+                от других компаний, которые занимаются разработкой.
+              </p>
             </div>
-            <!-- /.project-card__video-block -->
-            <div class="project-description">
-              <div class="project-description__blocks">
-                <div class="project-description__card">
-                  <h6 class="project-description__titel">Задача</h6>
-                  <p class="project-description__text">
-                    Сверстать сайт по готовому дизайн-макету. Добавить немного
-                    интерактива.
-                  </p>
-                </div>
-                <!-- /.project-description__card -->
-                <div class="project-description__card">
-                  <h6 class="project-description__titel">Срок</h6>
-                  <p class="project-description__text">7 дней</p>
-                </div>
-                <!-- /.project-description__card -->
-              </div>
-              <!-- /.project-description__blocks -->
-              <h6 class="project-description__titel">Описание проекта</h6>
-              <p class="project-description__text">
-                Дипломный проект курса по вёрстке. Разная ширина у блоков,
-                перестройка слайдера (на мобильной версии), анимация для
-                кнопок. Не все ссылки и кнопки куда-то ведут, почти все они
-                якорные.
+            <!-- /.study-blocks__container -->
+            <div class="study-blocks study-blocks__container">
+              <h3 class="study-blocks__titel">Курсы</h3>
+              <p class="study-blocks__text">
+                Прошла 7-ми недельный интенсивный курс по вёрстке от Glo
+                Academy. За время курса освоила семантическую вёрстку, Git,
+                SASS, PHP (отправка писем на почту с помощью PHP Mailer),
+                создание адаптивного дизайна из готового макета для полной
+                версии сайта, БЭМ нейминг, модальные окна, валидация формы,
+                анимацию CSS (keyframe и подключение библиотек), оптимизация
+                скорости сайта с помощью Google Page Speed. Всё это можно
+                увидеть на тестовом проекте.
                 <br />
-                Также использовался БЭМ на уровне названия классов, SASS для
-                написания стилей, JS и jQuery для написания простых скриптов.
+                <a
+                  class="study-blocks__link"
+                  href="https://emelianova-julia.ru/tour-plane/"
+                  target="blank"
+                  >Посмотреть тестовый проект можно здесь.</a
+                >
+              </p>
+              <!-- <br class="study-blocks__transfer study-block__transfer_1">
+              <br class="study-blocks__transfer study-block__transfer_2"> -->
+              <p class="study-blocks__text">
+                В дальнейшем также планирую проходить курсы по повышению
+                квалификации.
               </p>
             </div>
-            <!-- /.project-card__descrintion -->
+            <!-- /.study-blocks__container -->
           </div>
-          <!-- /.project-card__container -->
+          <!-- /.container -->
         </div>
-        <!-- /.project-card -->
-        <div class="project-card">
-          <div class="project-card__container">
-            <h3 class="project-card__titel">Сайт сериала “Ведьмак”</h3>
-            <span class="project-card__link-name">Ссылка на проект</span>
-            <a href="https://emelianova-julia.ru/witcher" target="_blank" class="project-card__link">нажми на меня</a>
-            <div class="project-card__video-block">
-              <iframe class="project-card__video" src="https://www.youtube.com/embed/mRWWcsxmOAk" frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+        <!-- /.study__container -->
+      </section>
+      <!-- /.study -->
+      <section class="work tabs work__wrapper" id="work">
+        <div class="container">
+          <h4 class="work__titel">Где работала</h4>
+          <div class="work__container">
+            <div class="work-description">
+              <p class="work-description__text">
+                Вся моя работа раньше не была связана с IT.
+              </p>
+              <h6 class="work-description__titel">3 года в общепите</h6>
+              <p class="work-description__text">
+                Должности: бариста, кассир-продавец/пекарь.
+              </p>
+              <h6 class="work-description__titel">1 год провела в Германии</h6>
+              <p class="work-description__text">
+                Уезжала в Германию по программе Au-pair. Работала, учила язык.
+              </p>
+              <h6 class="work-description__titel">
+                1 год и по настоящий момент
+              </h6>
+              <p class="work-description__text">
+                Работаю техническим специалистом в Триколоре. Могу объяснить
+                сложное простыми словами, вести переписку на языке понятным
+                клиенту, подготовить новых сотрудников для работы в компании,
+                помочь приобрести необходимые навыки для повышения качества
+                работы сотрудников.
+              </p>
+              <h6 class="work-description__titel">
+                Уже из Триколора решила перебраться в разработку
+              </h6>
             </div>
-            <!-- /.project-card__video-block -->
-            <div class="project-description">
-              <div class="project-description__blocks">
-                <div class="project-description__card">
-                  <h6 class="project-description__titel">Задача</h6>
-                  <p class="project-description__text">
-                    Сверстать страницу сайта сериала “Ведьмак” по
-                    дизайн-макету.
-                  </p>
-                </div>
-                <!-- /.project-description__card -->
-                <div class="project-description__card">
-                  <h6 class="project-description__titel">Срок</h6>
-                  <p class="project-description__text">4 дня</p>
-                </div>
-                <!-- /.project-description__card -->
+            <!-- /.work-description -->
+          </div>
+          <!-- /.work__wrapper -->
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- /.work -->
+      <section class="project tabs project__wrapper" id="project">
+        <div class="container project__container">
+          <h2 class="project__titel">Мои последние проекты</h2>
+          <div class="project-card">
+            <div class="project-card__container">
+              <h3 class="project-card__titel">
+                Сайт для отеля “GRAND HILTON HOTEL”
+              </h3>
+              <span class="project-card__link-name">Ссылка на проект</span>
+              <a
+                href="https://emelianova-julia.ru/tour-plane/"
+                target="_blank"
+                class="project-card__link"
+                >нажми на меня
+              </a>
+              <div class="project-card__video-block">
+                <img
+                  src="img/tour-plane.PNG"
+                  alt="Icon: screen"
+                  class="project-card__video"
+                />
+                <!-- <iframe
+                  class="project-card__video"
+                  src="https://www.youtube.com/embed/mRWWcsxmOAk"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe> -->
               </div>
-              <!-- /.project-description__blocks -->
-              <h6 class="project-description__titel">Описание проекта</h6>
-              <p class="project-description__text">
-                Встроено видео, настроен слайдер на серии, есть адаптив.
-                Ссылки в проекте не кликабельные. <br />
-                Выполнено в рамках интенсива по вёрстке. Один из моих первых
-                проектов.
-              </p>
-            </div>
-            <!-- /.project-card__descrintion -->
-          </div>
-          <!-- /.project-card__container -->
-        </div>
-        <!-- /.project-card -->
-        <div class="project-card">
-          <div class="project-card__container">
-            <h3 class="project-card__titel">
-              Адаптив для мобильных устройств
-            </h3>
-            <span class="project-card__link-name">Ссылка на проект</span>
-            <a href="https://www.figma.com/file/nkq2N4bY7XJ31XpgB3aiOW/clean_and_simple?node-id=0%3A1" target="_blank"
-              class="project-card__link">нажми на меня</a>
-            <div class="project-card__video-block">
-              <iframe class="project-card__video" src="https://www.youtube.com/embed/mRWWcsxmOAk" frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            </div>
-            <!-- /.project-card__video-block -->
-            <div class="project-description">
-              <div class="project-description__blocks">
-                <div class="project-description__card">
-                  <h6 class="project-description__titel">Задача</h6>
-                  <p class="project-description__text">
-                    Создать дизайн-макет для мобильных устройств.
-                  </p>
+              <!-- /.project-card__video-block -->
+              <div class="project-description">
+                <div class="project-description__blocks">
+                  <div class="project-description__card">
+                    <h6 class="project-description__titel">Задача</h6>
+                    <p class="project-description__text">
+                      Сверстать сайт по готовому дизайн-макету. Добавить немного
+                      интерактива.
+                    </p>
+                  </div>
+                  <!-- /.project-description__block -->
+                  <div class="project-description__card">
+                    <h6 class="project-description__titel">Срок</h6>
+                    <p class="project-description__text">6 недель.</p>
+                  </div>
+                  <!-- /.project-description__block -->
                 </div>
-                <!-- /.project-description__card -->
-                <div class="project-description__card">
-                  <h6 class="project-description__titel">Срок</h6>
-                  <p class="project-description__text">1 день.</p>
-                </div>
-                <!-- /.project-description__card -->
-              </div>
-              <!-- /.project-description__blocks -->
-              <h6 class="project-description__titel">Описание проекта</h6>
-              <p class="project-description__text">
-                Из дизайна полной версии сайта создать адаптивные макета для
-                планшета и мобильных устройств. Работа выполнена по заданию
-                курса по вёрстке. Дизайн-макет десктопа взят из интернета.
-              </p>
-            </div>
-            <!-- /.project-card__descrintion -->
-          </div>
-          <!-- /.project-card__container -->
-        </div>
-        <!-- /.project-card -->
-      </div>
-      <!-- /.container -->
-    </section>
-    <!-- /.project -->
-    <footer class="contacts tabs contacts__wrapper" id="contacts">
-      <div class="container">
-        <h4 class="contacts__titel">Контакты для связи</h4>
-        <p class="contacts__text">
-          Сейчас я открыта к предложениям, Вы можете пригласить меня в проект
-          на полный рабочий день или на частичную занятость. Могу работать
-          удалённо, либо в офисе.
-        </p>
-        <div class="contacts__block">
-          <a href="mailto:julia03951@gmail.com" class="contacts__link">Почта julia03951@gmail.com
-          </a>
-          <a href="tel:89992154515" class="contacts__link">Звонок, СМС +7(999)-215-45-15</a>
-          <a target="blank" href="https://t.me/jul55" class="contacts__link">Телеграм @jul55</a>
-        </div>
-        <!-- /.contacts__block -->
-      </div>
-      <!-- /.container -->
-    </footer>
-    <!-- /.contacts -->
-  </div>
-  <!-- /.body__wrapper -->
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
-    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-  <script src="js/main.js"></script>
-</body>
+                <!-- /.project-description__blocks -->
 
+                <h6 class="project-description__titel">Описание проекта</h6>
+                <p class="project-description__text">
+                  Обучающий проект с курса, по которому проходило обучение.
+                  Добавлена анимация на сайт, создан адаптив, модальные окна,
+                  настроена отправка писем на почту и валидация форм.
+                  Использовался БЭМ на уровне названия классов, SASS для
+                  написания стилей, JS и jQuery для написания простых скриптов.
+                </p>
+              </div>
+              <!-- /.project-card__descrintion -->
+            </div>
+            <!-- /.project-card__container -->
+          </div>
+          <!-- /.project-card -->
+          <div class="project-card">
+            <div class="project-card__container">
+              <h3 class="project-card__titel">
+                Сайт интернет магазина “Ehua shop”
+              </h3>
+              <span class="project-card__link-name">Ссылка на проект</span>
+              <a
+                href="https://emelianova-julia.ru/ehya-shop/"
+                target="_blank"
+                class="project-card__link"
+                >нажми на меня</a
+              >
+              <div class="project-card__video-block">
+                <img
+                  src="img/ehya-shop.PNG"
+                  alt="Icon: screen"
+                  class="project-card__video"
+                />
+                <!-- <iframe
+                  class="project-card__video"
+                  src="https://www.youtube.com/embed/mRWWcsxmOAk"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe> -->
+              </div>
+              <!-- /.project-card__video-block -->
+              <div class="project-description">
+                <div class="project-description__blocks">
+                  <div class="project-description__card">
+                    <h6 class="project-description__titel">Задача</h6>
+                    <p class="project-description__text">
+                      Сверстать сайт по готовому дизайн-макету. Добавить немного
+                      интерактива.
+                    </p>
+                  </div>
+                  <!-- /.project-description__card -->
+                  <div class="project-description__card">
+                    <h6 class="project-description__titel">Срок</h6>
+                    <p class="project-description__text">7 дней</p>
+                  </div>
+                  <!-- /.project-description__card -->
+                </div>
+                <!-- /.project-description__blocks -->
+                <h6 class="project-description__titel">Описание проекта</h6>
+                <p class="project-description__text">
+                  Дипломный проект курса по вёрстке. Разная ширина у блоков,
+                  перестройка слайдера (на мобильной версии), анимация для
+                  кнопок. Не все ссылки и кнопки куда-то ведут, почти все они
+                  якорные.
+                  <br />
+                  Также использовался БЭМ на уровне названия классов, SASS для
+                  написания стилей, JS и jQuery для написания простых скриптов.
+                </p>
+              </div>
+              <!-- /.project-card__descrintion -->
+            </div>
+            <!-- /.project-card__container -->
+          </div>
+          <!-- /.project-card -->
+          <div class="project-card">
+            <div class="project-card__container">
+              <h3 class="project-card__titel">Сайт сериала “Ведьмак”</h3>
+              <span class="project-card__link-name">Ссылка на проект</span>
+              <a
+                href="https://emelianova-julia.ru/witcher"
+                target="_blank"
+                class="project-card__link"
+                >нажми на меня</a
+              >
+              <div class="project-card__video-block">
+                <img
+                  src="img/ведьмак.PNG"
+                  alt="Icon: screen"
+                  class="project-card__video"
+                />
+                <!-- <iframe
+                  class="project-card__video"
+                  src="https://www.youtube.com/embed/mRWWcsxmOAk"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe> -->
+              </div>
+              <!-- /.project-card__video-block -->
+              <div class="project-description">
+                <div class="project-description__blocks">
+                  <div class="project-description__card">
+                    <h6 class="project-description__titel">Задача</h6>
+                    <p class="project-description__text">
+                      Сверстать страницу сайта сериала “Ведьмак” по
+                      дизайн-макету.
+                    </p>
+                  </div>
+                  <!-- /.project-description__card -->
+                  <div class="project-description__card">
+                    <h6 class="project-description__titel">Срок</h6>
+                    <p class="project-description__text">4 дня</p>
+                  </div>
+                  <!-- /.project-description__card -->
+                </div>
+                <!-- /.project-description__blocks -->
+                <h6 class="project-description__titel">Описание проекта</h6>
+                <p class="project-description__text">
+                  Встроено видео, настроен слайдер на серии, есть адаптив.
+                  Ссылки в проекте не кликабельные. <br />
+                  Выполнено в рамках интенсива по вёрстке. Один из моих первых
+                  проектов.
+                </p>
+              </div>
+              <!-- /.project-card__descrintion -->
+            </div>
+            <!-- /.project-card__container -->
+          </div>
+          <!-- /.project-card -->
+          <div class="project-card">
+            <div class="project-card__container">
+              <h3 class="project-card__titel">
+                Адаптив для мобильных устройств
+              </h3>
+              <span class="project-card__link-name">Ссылка на проект</span>
+              <a
+                href="https://www.figma.com/file/nkq2N4bY7XJ31XpgB3aiOW/clean_and_simple?node-id=0%3A1"
+                target="_blank"
+                class="project-card__link"
+                >нажми на меня</a
+              >
+              <div class="project-card__video-block">
+                <img
+                  src="img/responsive.png"
+                  alt="Icon: screen"
+                  class="project-card__video"
+                />
+                <!-- <iframe
+                  class="project-card__video"
+                  src="https://www.youtube.com/embed/mRWWcsxmOAk"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe> -->
+              </div>
+              <!-- /.project-card__video-block -->
+              <div class="project-description">
+                <div class="project-description__blocks">
+                  <div class="project-description__card">
+                    <h6 class="project-description__titel">Задача</h6>
+                    <p class="project-description__text">
+                      Создать дизайн-макет для мобильных устройств.
+                    </p>
+                  </div>
+                  <!-- /.project-description__card -->
+                  <div class="project-description__card">
+                    <h6 class="project-description__titel">Срок</h6>
+                    <p class="project-description__text">1 день.</p>
+                  </div>
+                  <!-- /.project-description__card -->
+                </div>
+                <!-- /.project-description__blocks -->
+                <h6 class="project-description__titel">Описание проекта</h6>
+                <p class="project-description__text">
+                  Из дизайна полной версии сайта создать адаптивные макета для
+                  планшета и мобильных устройств. Работа выполнена по заданию
+                  курса по вёрстке. Дизайн-макет десктопа взят из интернета.
+                </p>
+              </div>
+              <!-- /.project-card__descrintion -->
+            </div>
+            <!-- /.project-card__container -->
+          </div>
+          <!-- /.project-card -->
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- /.project -->
+      <footer class="contacts tabs contacts__wrapper" id="contacts">
+        <div class="container">
+          <h4 class="contacts__titel">Контакты для связи</h4>
+          <p class="contacts__text">
+            Сейчас я открыта к предложениям, Вы можете пригласить меня в проект
+            на полный рабочий день или на частичную занятость. Могу работать
+            удалённо, либо в офисе.
+          </p>
+          <div class="contacts__block">
+            <a href="mailto:julia03951@gmail.com" class="contacts__link"
+              >Почта julia03951@gmail.com
+            </a>
+            <a href="tel:89992154515" class="contacts__link"
+              >Звонок, СМС +7(999)-215-45-15</a
+            >
+            <a target="blank" href="https://t.me/jul55" class="contacts__link"
+              >Телеграм @jul55</a
+            >
+          </div>
+          <!-- /.contacts__block -->
+        </div>
+        <!-- /.container -->
+      </footer>
+      <!-- /.contacts -->
+    </div>
+    <!-- /.body__wrapper -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
